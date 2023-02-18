@@ -15,7 +15,12 @@
     font-weight: 700;
     margin: 398px auto 0;
 }
+.intro>h1{
+    font-size: 50px;
+    font-weight:500;
+    font-family: "Open Sans", sans-serif;
 
+}
 .u-section-1 .u-text-2 {
     font-size: 1.5rem;
     letter-spacing: 2px;
