@@ -1,0 +1,97 @@
+ body{
+    margin:0;
+    padding:0;
+    
+ }
+ .heading{
+    position:relative;
+ }
+ .heading-text{
+    position:absolute;
+    top:25%;
+    left:10%;
+    color:#fff;
+    padding:20px;
+    margin-left: 20px;
+    font-family: "RH Futura Medium", OpenSansRegular, "Open Sans Regular", sans-serif;
+    
+
+ }
+ .heading-text>h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight:bold;
+    color:rgb(243, 243, 65);
+
+ }
+ 
+ .heading-text>p{
+    font-size:20px;
+    margin-top:12px;
+    font-weight: normal;
+
+ }
+hr {
+    color: rgb(2, 2, 55);
+    width:60%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 0;
+    margin-top:60px;
+    border-top: 1px solid ;
+    box-sizing: content-box;
+    height: 2px;
+    overflow: visible;
+
+}
+
+ .row{
+   
+    margin-top: 80px;
+    width:80%;
+    max-width: 1170px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:50px 30px;
+ }
+ /*.row .left{
+    overflow: hidden;
+ }*/
+ .row .left img{
+    margin-left:100px;
+    border-radius: 50%;
+    width: 50%;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    object-fit:cover;
+    height: 250px;
+ }
+ .row .right{
+    display: flex;
+    align-items:center
+ }
+.row .right .content{
+    padding-left:20px;
+}
+.row .right .content p{
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+.row .right .content h2{
+    font-size:25px ;
+    font-family: "RH Futura Medium", OpenSansRegular, "Open Sans Regular", sans-serif;
+    font-weight:bold;
+    color: rgb(243, 243, 65);
+    
+}
+.w-full {
+   margin-top: 50px;
+}
+.text-center>h1{
+   color:rgb(243, 243, 65);
+}
+div>a:hover{
+   color:rgb(243, 243, 65) ;
+}
