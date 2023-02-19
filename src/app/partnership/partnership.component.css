@@ -1,0 +1,91 @@
+
+*{
+    padding:0;
+    margin:0;
+   
+}
+
+.row2{
+   
+    margin-top: 80px;
+    width:80%;
+    max-width: 1170px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:50px 30px;
+ }
+ /*.row .left{
+    overflow: hidden;
+ }*/
+ /*.row2 .right img{
+    margin-left:100px;
+    border-radius: 20%;
+    width: 50%;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    object-fit:cover;
+    height: 250px;
+ }*/
+ /*.row2 .left{
+    display: flex;
+    align-items:center
+ }
+.row2 .left .content{
+    padding-left:20px;
+}
+.secondpart{
+    padding:15px,9%;
+    padding-bottom: 100px;
+
+}*/
+.banner {
+    height: 77vh;
+    background: url('../../assets/images/ggffg-min.jpg');
+    background-size: cover;
+    background-position:center center;
+    box-shadow: inset 0 0 0 100vh rgba(10, 28, 69, 0.5);
+    object-fit: cover;
+}
+.sidebar-header{
+    text-transform:uppercase;
+    font-size:0.9em;
+    font-weight:bolder;
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    animation: slide 0.5s;
+}
+#princ{
+    text-align: center;
+    padding-bottom: 15px;
+    color:rgb(243, 243, 65);
+    text-shadow:0 5px 10px rgba(0,0,0,.2);
+    font-size:50px;
+    margin-top:30px
+     
+}
+ .boxcontainer{
+   min-height: 100%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+  
+   row-gap: -50px;
+   margin-top:-30px;
+   
+}
+.w-full{
+    width:384px;
+    height:180px;
+}
+div>span{
+    margin-right: 10px;
+    
+   
+}
+#bb ,#aa,#a,#c,#b,#cc,#d{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
