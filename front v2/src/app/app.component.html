@@ -1,0 +1,3 @@
+<app-navbar *ngIf="showNav"></app-navbar>
+<router-outlet (activate)="changeOfRoutes()"></router-outlet>
+<app-footer *ngIf="showFoot"></app-footer>
