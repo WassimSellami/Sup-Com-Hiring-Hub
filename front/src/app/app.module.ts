@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { AddofferComponent } from './addoffer/addoffer.component';
 import { UpdateofferComponent } from './updateoffer/updateoffer.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -48,6 +49,8 @@ import { UpdateofferComponent } from './updateoffer/updateoffer.component';
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
+
 
    
   ],
