@@ -1,0 +1,212 @@
+header,
+main {
+    font-family: 'Montserrat', sans-serif;
+    animation: slide 0.5s;
+}
+
+.black-fogra {
+    color: #030512;
+}
+
+.dack {
+    color: #1f8bcc;
+}
+
+.oxford-blue {
+    color: #0a1c45;
+}
+
+.golden {
+    color: #c9ae5d;
+}
+
+.red {
+    color: #c20b1f;
+}
+
+.gray {
+    color: #F9F9F9;
+}
+
+.pagination {
+    padding: 100px 0px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-100px)
+    }
+
+    to {
+        transform: translateX(0px)
+    }
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.page-link{
+    color:black;
+    font-weight:bold;
+    font-size:0.8em;
+}
+
+.enabled{
+    background:#1f8bcc;
+}
+
+.banner {
+    height: 77vh;
+    background: url('../../assets/images/yhfg-min.jpg');
+    background-size: cover;
+    background-position:center center;
+    box-shadow: inset 0 0 0 100vh rgba(10, 28, 69, 0.5);
+    object-fit: cover;
+}
+
+.breadcrumb {
+    box-shadow: inset 0 0 0 1000px rgba(3, 5, 18, 0.7);
+}
+
+.breadcrumb-item {
+    font-size: 0.9em;
+}
+
+.raise:hover,
+.raise:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+}
+
+.column {
+    margin:5px 10px;
+    margin-left:0px;
+    font-size:0.7em;
+    padding:10px 5px;
+}
+
+
+
+
+
+button {
+    color: var(--color);
+    transition: 0.25s;
+
+  
+   
+}
+
+button {
+    background: none;
+    border: 0px;
+    font: inherit;
+    line-height: 1;
+    padding: 1em 2em;
+    font-size: 0.8em;
+    background-color: #1f8bcc;
+    color: white;
+}
+
+.search {
+    padding-top:80px;
+}
+
+.form-control{
+    border: 0px;
+    border-radius:25px;
+    font-size:smaller;
+}
+
+.date {
+    background: linear-gradient(0.25turn, #1f8bcc, #0a1c45);
+    position: relative;
+    top: 100px;
+    left: -40px;
+    height: 80px;
+    width: 80px;
+    color: white;
+    border:5px solid white;
+    border-radius: 50%;
+}
+
+section{
+    background:rgb(240,240,240);
+}
+
+.badge {
+    background: #1f8bcc;
+}
+
+.date>h2 {
+    font-size: 1.5em;
+}
+
+.date>div {
+    font-size: 0.8em;
+}
+
+.date-image {
+    position: relative;
+    border-radius: 5px;
+}
+
+.body>h4>a, .body>div>a {
+    transition: color 0.5s ease, font-size 0.5s ease;
+    color:black;
+    text-decoration: none;
+}
+
+.body>h4>a:hover, .body>div>a:hover {
+    color: #1f8bcc;
+    cursor: pointer;
+}
+
+.box1 > img, .card-img-top{
+    cursor:pointer;
+}
+
+.image-container {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.image-container img {
+    transition: transform .5s;
+}
+
+.image-container:hover img   {
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+    cursor: pointer;
+}
+
+.image-container:hover~.body>h4 {
+    color: #1f8bcc;
+    cursor: pointer;
+}
+
+.sidebar-header{
+    text-transform:uppercase;
+    font-size:0.9em;
+    font-weight:bolder;
+}
+
+.sidebar-section{
+    margin-top:75px;
+}
+
+.box1 .box-img {
+    aspect-ratio: 1/1;
+    margin-bottom:10px;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.box1:hover .box-img {
+    opacity: 0.5;
+}
+

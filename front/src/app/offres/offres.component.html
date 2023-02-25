@@ -1,0 +1,79 @@
+<header>
+    <div class="banner text-white d-flex align-items-center">
+        <div class="layer text-center col-12 pt-5">
+            <h1 style="font-size:50px; font-weight:900;letter-spacing: 3px;" class="text-white" data-aos="zoom-out-left"
+                data-aos-duration="500" data-aos-delay="500">Nos offres
+            </h1>
+            <nav aria-label="breadcrumb" class="d-flex justify-content-center"
+                style="font-size:0.8em; text-transform:uppercase;" data-aos="zoom-out-up" data-aos-duration="500"
+                data-aos-delay="750">
+             
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="bg-light">
+        <div class="container">
+            <div class="row" style="width: 120%; margin-left: 70px;">
+                <div class="date-image col-lg-8 col-md-6 col-10 offset-1 offset-md-1 offset-lg-0 p-0" *ngFor="let offer of offers">
+                    <div class="element " style="margin-bottom:-30px !important;"
+                       >
+                        <div class="date text-center" style="display:inline-block; letter-spacing:2px">
+                            <h2 class="mb-0 mt-2">{{ offer.datePost }}</h2>
+                          
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 p-0 box">
+                                <a  class="text-primary me-4">
+                                    <img class="card-img-top" src="https://www.salesforce.com/content/dam/blogs/fr/CTAs/ia-grand-saut-pme.png"
+                                        style="aspect-ratio:4/3; object-fit: cover;">
+                                </a>
+                            </div>
+                            <div class="body col-lg-7 bg-white p-5">
+                                <small class="text-muted" style="font-weight:bold;">
+                                    <span >
+                                        <span >
+                                           {{ offer.company }}
+                                        </span>
+                                    </span>
+                                </small>
+                                <h4 class="mb-3 mt-3" style="font-weight:bold;">
+                                    <a >
+                                       {{ offer.type }}
+                                    </a>
+                                </h4>
+                                <small
+                                    style="line-height:4vh">{{ offer.description }}</small><br>
+                                <button class="raise p-1 mt-4" routerLink="/details" 
+                                   >Read More
+                                    &GreaterGreater;</button>
+                                    <div class="delete" style="float: right;">
+                                        <button type="button" class="btn btn-primary" style="background-color: blue; margin-right: 20px;"  (click)="updateOffer(offer.id)">Update</button>
+
+                                        <button type="button" class="btn btn-danger" style="background-color: red;" (click)="deleteOffer(offer.id)">Delete</button>
+                                        <p>this permitted only by admin </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="pagination justify-content-center mb-0 col-md-8">     
+            </ul>
+        </div>
+    </section>
+    <section style="background-color: #bec1c5; height: 200px; padding-top: 30px;">
+    <h1 style="font-size: 25px; font-weight: bold;text-align: center;">Add an offer</h1>
+<br/><br/>
+    <button type="submit" class="btn btn-primary" style="margin-left:46%;" routerLink="/addoffer">Add Offer</button>
+    <div class="pop" *ngIf="show">
+<app-addoffer></app-addoffer>
+    </div>
+</section>
+
+
+    
+</main>
+

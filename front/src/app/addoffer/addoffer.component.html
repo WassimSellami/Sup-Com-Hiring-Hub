@@ -1,0 +1,36 @@
+<form #addForm="ngForm" (ngSubmit)="addOffer()" style="width: 500px; margin-left: 500px;margin-top: 80px; background-color: rgb(238, 245, 251);">
+    <div class="form-group">
+      <label for="exampleInputEmail1">name</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name" [(ngModel)]="offer.name" name="something">
+      <br/></div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">description</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter description" [(ngModel)]="offer.description" name="name">
+          <br/></div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">location</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="location" [(ngModel)]="offer.location" name="location">
+        <br/></div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">company</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="company" [(ngModel)]="offer.company" name="company">
+        <br/></div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">duration</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="duration" [(ngModel)]="offer.duration" name="duration">
+        <br/></div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">status</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="status" [(ngModel)]="offer.status" name="status">
+      <br/></div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">datePost</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="datePost" [(ngModel)]="offer.datePost" name="datePost">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">type</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="type" [(ngModel)]="offer.type" name="type">
+          </div>
+    
+    <button type="submit" class="btn btn-primary" style="background-color: blue; margin-left: 200px;">Submit</button>
+  </form>
