@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup} from '@angular/forms';
 import { Route, Router } from '@angular/router';
 import { Login } from '../service/login';
 import { LoginService } from '../service/login.service';
@@ -12,11 +12,11 @@ import { LoginService } from '../service/login.service';
 
 export class LoginComponent implements OnInit{
   constructor(private loginService:LoginService , private router:Router) {}
+  showError=false;
   login_instance:Login = new Login();
   public loginForm = new FormGroup({
     username: new FormControl(''),
     password: new FormControl(''),
-    submitButton: new FormControl(''),
 
   });
   ngOnInit(): void {
@@ -27,7 +27,9 @@ export class LoginComponent implements OnInit{
        this.goToHome();
       
     },
-    error => console.log(error));
+    error => this.showError=true);
+    this.login_instance.username="";
+    this.login_instance.password="";
   }
 
   goToHome(){

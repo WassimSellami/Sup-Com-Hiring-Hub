@@ -10,13 +10,13 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { OffreDetailsComponent } from './offre-details/offre-details.component';
 import { OffresComponent } from './offres/offres.component';
 import { Page1Component } from './page1/page1.component';
-import { RegisterComponent } from './register/register.component';
+import { SignupComponent } from './signup/signup.component';
 import { UpdateofferComponent } from './updateoffer/updateoffer.component';
 
 const routes: Routes = [
   { path: 'page1', component: Page1Component },
   { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
+  { path: 'register', component: SignupComponent },
   { path: 'navbar', component: NavbarComponent },
   { path: 'contactus', component: ContactUsComponent },
   { path: 'offres', component: OffresComponent },

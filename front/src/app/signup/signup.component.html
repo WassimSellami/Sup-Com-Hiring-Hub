@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Glassmorphism login Form Tutorial in html css</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+
+
+    </style>
+</head>
+<body>
+    <div class="background">
+      
+    </div>
+    <!-- <form style="margin-top: 40px;"> -->
+        <form [formGroup]="signupForm" (submit)="signup()" style="margin-top: 40px;">
+        <h3>Register Here</h3>
+        <label for="username">First Name</label>
+        <input type="text" placeholder="Enter your first name" id="first_name" required [(ngModel)]="signup_instance.first_name" formControlName="firstname"  >  
+        <label for="username">Last Name</label>
+        <input type="text" placeholder="Enter your last name" id="last_name" required [(ngModel)]="signup_instance.last_name" formControlName="last_name" >
+        <label for="username">Username</label>
+        <input type="text" placeholder="Enter your username" id="username" required [(ngModel)]="signup_instance.username" formControlName="username">
+        <label for="email">email</label>
+        <input type="email" placeholder=" Enter your email" type="email" id="email" required [(ngModel)]="signup_instance.email" formControlName="email">
+        <label for="password">Password</label>
+        <input type="password" placeholder=" Enter your Password" type="password" id="password" required [(ngModel)]="signup_instance.password" formControlName="password">
+        <label for="birth">birth Date</label>
+        <input type="text" placeholder=" Enter your birth date" id="birth_date" required [(ngModel)]="signup_instance.birth_date" formControlName="birth_date">
+        <label for="image">Occupation</label>
+        <input type="text" placeholder="Enter your occupation" id="occupation" required [(ngModel)]="signup_instance.occupation" formControlName="occupation">
+        <button style="color:#080710" [disabled]="!signupForm.valid" type="submit" >Sign Up</button>      
+    </form>
+</body>
+</html>

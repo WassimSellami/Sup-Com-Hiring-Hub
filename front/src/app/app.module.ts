@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Page1Component } from './page1/page1.component';
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { OffresComponent } from './offres/offres.component';
@@ -19,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { AddofferComponent } from './addoffer/addoffer.component';
 import { UpdateofferComponent } from './updateoffer/updateoffer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SignupComponent } from './signup/signup.component';
 
 
 
@@ -27,7 +27,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     Page1Component,
     LoginComponent,
-    RegisterComponent,
     NavbarComponent,
     OffresComponent,
     ContactUsComponent,
@@ -38,6 +37,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     AddofferComponent,
     UpdateofferComponent,
+    SignupComponent
   
     
     

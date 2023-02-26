@@ -17,19 +17,23 @@
     <div class="background">
        
       </div>
-      <form [formGroup]="loginForm" (submit)="login()">
+      <form [formGroup]="loginForm"  (submit)="login()">
         <h3>Login Here</h3>
             <label for="username">Username</label>
-            <input type="text" placeholder="Username"  id="username" [(ngModel)]="login_instance.username" formControlName="username" ngModel required>
-            <div *ngIf="loginForm.controls.username.invalid && loginForm.controls.username.touched" style="color:red; font-size: small;">
+            <input type="text" placeholder="Enter your username"  id="username" [(ngModel)]="login_instance.username" formControlName="username"  required value="login_instance.username">
+            <div *ngIf="loginForm.controls.username.invalid && loginForm.controls.username.touched && !showError" style="color:red; font-size: small;">
               Username is required.
              </div>  
             <label for="password">Password</label>
-            <input type="password" placeholder="Password" id="password"   id="name" [(ngModel)]="login_instance.password" formControlName="password" required>
-            <div *ngIf="(loginForm.controls.password.invalid && loginForm.controls.password.touched)" style="color:red; font-size: small;">
+            <input type="password" placeholder="Enter your password" id="password"   id="name" [(ngModel)]="login_instance.password" formControlName="password" required>
+            <div *ngIf="loginForm.controls.password.invalid && loginForm.controls.password.touched && !showError" style="color:red; font-size: small;">
               Password is required.
+             </div> 
+             <div class="" *ngIf="showError" >
+                <h1 style="color:red ; text-align: center; ">Please verify your credentials !</h1>
              </div>
-          <button style="color:#080710" [disabled]="loginForm.invalid" type="submit" >Log In</button>
+          <button style="color:#080710" [disabled]="!loginForm.valid" type="submit" >Log In</button>
       </form>
+      
 </body>
 </html>
