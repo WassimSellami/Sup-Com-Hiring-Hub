@@ -25,8 +25,8 @@ body{
 }
 
 form{
-    height: 1025px;
-    width: 400px;
+    height: 1230px;
+    width: 35%;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
     transform: translate(-50%,-50%);
@@ -37,6 +37,7 @@ form{
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
+    margin-top: 700px;
 }
 form *{
     font-family: 'Poppins',sans-serif;
@@ -75,7 +76,6 @@ input{
 button{
     margin-top: 50px;
     width: 100%;
-    background-color: #ffffff;
     color: #080710;
     padding: 15px 0;
     font-size: 18px;
@@ -106,9 +106,10 @@ button{
   margin-right: 4px;
 }
 
-.field{
-    background-color: #27262c;
-    border: #e5e5e5 ;
-    border-color: #e5e5e5;
-    
+.field:focus{
+    background-color: #27262c;   
+}
+
+.register{
+
 }

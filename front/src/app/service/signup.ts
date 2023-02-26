@@ -4,6 +4,6 @@ export class Signup{
     password:String 
     first_name:String
     last_name : String  
-    birth_date :String 
+    birth_date :Date 
     occupation:String
 }
