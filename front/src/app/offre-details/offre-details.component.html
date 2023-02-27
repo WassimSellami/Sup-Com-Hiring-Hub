@@ -1,0 +1,59 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<section class="content-item grey" id="blog-item">
+    <div class="container">
+        <div class="row">
+            <!-- BLOG POST - START -->
+            <div class="col-sm-8 blog">
+                  <h2>edbhjed</h2>
+                    <ul class="blog-detail list-unstyled list-inline">  
+                      <li><i class="fa fa-calendar"></i>{{ myOffer.id }}</li>
+                        <li><i class="fa fa-clock-o"></i>   Posted : {{ myOffer.type }}</li>
+                        <li><i class="fa fa-user"></i>    Posted By :{{ myOffer.company }}</li>
+                        
+                    </ul>
+<p><img class="img-responsive pull-left" src="https://medias.vie-publique.fr/data_storage_s3/styles/large_full/public/en_bref/image_principale/UE_feuille_de_route_intelligence_artificielle_IA_189424980_Drupal.jpg?itok=lSfId9LV" alt="">{{ myOffer.description }}</p>                    <p>{{ myOffer.description }}</p>             
+                  
+            
+                
+                </div>
+                
+                
+                <!-- SIDEBAR - START -->
+                <div class="col-sm-4">
+                  <div class="sidebar">
+                        <h3>Categorie</h3>
+                        <div class="box categories">
+                            <ul class="list-unstyled">
+                                <li><a href="#" style="color: #2e66bb;">{{ myOffer.company }}</a></li>
+                            </ul>
+                        </div>
+                        <h3>companiy</h3>
+                        <div class="box posts">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-chevron-right"></i><a href="#" style="color: #2e66bb;">View details about company</a></li>
+                            </ul>
+                        </div>
+                        <h3>Tags</h3>
+                        <div class="box tags">
+                            <ul class="blog-tags list-unstyled list-inline" style="color: #2e66bb;">
+                                <li><a href="#"><i class="fa fa-tag"></i>cloud</a></li>
+                                <li><a href="#"><i class="fa fa-tag"></i>devops</a></li>
+                                <li><a href="#"><i class="fa fa-tag"></i>IA</a></li>
+                                <li><a href="#"><i class="fa fa-tag"></i>Security</a></li>
+                                <li><a href="#"><i class="fa fa-tag"></i>Mobile dev</a></li>
+                                <li><a href="#"><i class="fa fa-tag"></i>Software eng</a></li>                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- SIDEBAR - END -->
+            </div>
+        </div>
+        <h2 style="color: #1950a0; text-align: center;">Apply Now If You Are Interested</h2>
+        <section class="apply">
+            <input type="text" (change)="getName(name.value)" #name> <br/>
+            <input type="file" (change)="getFile($event)" > <br/>
+            <button type="submit" class="btn btn-primary"  (click)="submitData()" style="background-color: #0d6efd;">Upload your CV</button>
+        </section>
+    </section>
+

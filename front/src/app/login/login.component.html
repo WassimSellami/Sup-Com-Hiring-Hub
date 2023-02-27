@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Glassmorphism login Form Tutorial in html css</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+
+
+    </style>
+</head>
+<body>
+    <div class="background">
+       
+      </div>
+      <form [formGroup]="loginForm"  (submit)="login()">
+        <h3>Login Here</h3>
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter your username"  id="username" [(ngModel)]="login_instance.username" formControlName="username"  required value="login_instance.username">
+            <div *ngIf="loginForm.controls.username.invalid && loginForm.controls.username.touched && !showError" style="color:red; font-size: small;">
+              Username is required.
+             </div>  
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter your password" id="password"   id="name" [(ngModel)]="login_instance.password" formControlName="password" required>
+            <div *ngIf="loginForm.controls.password.invalid && loginForm.controls.password.touched && !showError" style="color:red; font-size: small;">
+              Password is required.
+             </div> 
+             <div class="" *ngIf="showError" >
+                <h1 style="color:red ; text-align: center; ">Please verify your credentials !</h1>
+             </div>
+          <button style="color:#080710" [disabled]="!loginForm.valid" type="submit" >Log In</button>
+      </form>
+      
+</body>
+</html>
