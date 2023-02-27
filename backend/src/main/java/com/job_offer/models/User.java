@@ -23,28 +23,24 @@ public class User {
   @NotBlank
   @Size(max = 20)
   private String username;
-
   @NotBlank
+
   @Size(max = 50)
   @Email
   private String email;
-
   @NotBlank
   @Size(max = 120)
   private String password;
   @NotBlank
+
   @Size(max = 120)
   private String first_name;
   @NotBlank
   @Size(max = 120)
   private String last_name;
   @NotBlank
-  private Date birth_date;
-
-/*
-  private String image_path;
-*/
-@NotBlank
+  private String birth_date;
+  @NotBlank
   @Size(max = 120)
   private String occupation;
 
@@ -61,9 +57,18 @@ public class User {
   private Set<Offer> offers = new HashSet<>();
 
 
-
   public User() {
   }
+
+//  public User(String username, String email, String password, String first_name, String last_name, String birth_date, String occupation) {
+//    this.username = username;
+//    this.email = email;
+//    this.password = password;
+//    this.first_name = first_name;
+//    this.last_name = last_name;
+//    this.birth_date = birth_date;
+//    this.occupation = occupation;
+//  }
 
   public User(String username, String email, String password) {
     this.username = username;
@@ -87,11 +92,11 @@ public class User {
     this.last_name = last_name;
   }
 
-  public Date getBirth_date() {
+  public String getBirth_date() {
     return birth_date;
   }
 
-  public void setBirth_date(Date birth_date) {
+  public void setBirth_date(String birth_date) {
     this.birth_date = birth_date;
   }
 

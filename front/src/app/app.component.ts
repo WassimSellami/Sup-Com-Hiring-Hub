@@ -14,7 +14,7 @@ export class AppComponent {
   showFoot: boolean = false;
   changeOfRoutes() {
     const url = this.router.url;
-    this.showNav = !url.includes("page1") && !url.includes("login") && !url.includes("register") && !url.includes("popup")  && !url.includes("addoffer");
+    this.showNav = !url.includes("page1")  && !url.includes("login") && !url.includes("register") && !url.includes("popup")  && !url.includes("addoffer");
     this.showFoot = !url.includes("page1") && !url.includes("login") && !url.includes("register") && !url.includes("popup")  && !url.includes("addoffer");
 
   }

@@ -14,7 +14,7 @@ import { SignupComponent } from './signup/signup.component';
 import { UpdateofferComponent } from './updateoffer/updateoffer.component';
 
 const routes: Routes = [
-  { path: 'page1', component: Page1Component },
+  { path: 'index', component: Page1Component },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: SignupComponent },
   { path: 'navbar', component: NavbarComponent },
@@ -26,11 +26,7 @@ const routes: Routes = [
   { path: 'companies', component: CompaniesComponent },
   { path: 'addoffer', component:AddofferComponent  },
   { path: 'updateoffer/:offer', component:UpdateofferComponent },
-
-  { path: '**', component: HomeComponent },
-
-
-
+  { path: '**', component:  Page1Component},
 
 ];
 
