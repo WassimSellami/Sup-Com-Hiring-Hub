@@ -28,10 +28,11 @@ export class OfferService {
     return this.http.get<Offer>(`${this.apiServerUrl}/offer/find/${id}`);
   }
   public  getCurrentOffer() :Offer{
-    console.log("service : ", this.currentOffer)
-    return this.currentOffer;
+    let currentOffer =JSON.parse(sessionStorage.getItem("currentOffer") || '{}');
+    return currentOffer;
   }
-  public  setCurrentOffer(selectedOffer:Offer) :void{
-     this.currentOffer=selectedOffer;
+  public setCurrentOffer(selectedOffer:Offer) :void{
+    console.log(selectedOffer)
+     sessionStorage.setItem("currentOffer", JSON.stringify(selectedOffer));
   }
 }

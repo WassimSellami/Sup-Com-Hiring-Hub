@@ -63,7 +63,6 @@ export class OffresComponent implements OnInit {
     this.router.navigate(['updateoffer',id])
   }
   goDetails(selectedOffer:Offer){
-    // this.currrentOffer=selectedOffer;
     this.offerService.setCurrentOffer(selectedOffer);
     this.router.navigate(['details',selectedOffer.id])
   }

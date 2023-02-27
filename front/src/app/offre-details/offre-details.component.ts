@@ -12,11 +12,9 @@ import { OfferService } from '../service/offer.service';
 export class OffreDetailsComponent implements OnInit {
   constructor(private http:HttpClient ,  private offresComponent:OffresComponent , private offerService:OfferService) { }
   myOffer:Offer;
-
+  defaultImage: String = "https://medias.vie-publique.fr/data_storage_s3/styles/large_full/public/en_bref/image_principale/UE_feuille_de_route_intelligence_artificielle_IA_189424980_Drupal.jpg?itok=lSfId9LV" 
   ngOnInit(): void {
     this.myOffer=this.offerService.getCurrentOffer();
-console.log(this.myOffer);
-console.log("hammadi");
 }
   name:String=""
   file:any;

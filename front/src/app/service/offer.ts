@@ -9,4 +9,5 @@ export class Offer{
     company : String  
     duration :String 
     user:User
+    image_path: String
 }

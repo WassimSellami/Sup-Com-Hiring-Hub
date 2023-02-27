@@ -46,8 +46,9 @@ public class Offer {
 
 
     @NotBlank
-
     private String duration;
+
+    private String image_path;
 
 
 
