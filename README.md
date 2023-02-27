@@ -1,15 +1,15 @@
   
-  #Sup'Hiring Hub
+  # Sup'Hiring Hub
 
 Ce projet est une application web développée avec Spring Boot et Angular.
 
 ## Prerequis
 
-  Java 8 or later
-  Node.js and npm
-  Angular CLI
-  MySQL Server
-  Your favorite IDE (e.g. Eclipse, IntelliJ IDEA, Visual Studio Code)
+  Java 8 or later.
+  Node.js and npm.
+  Angular CLI.
+  MySQL Server.
+  Your favorite IDE (e.g. Eclipse, IntelliJ IDEA, Visual Studio Code).
 
 ## Installation
 
